@@ -2,7 +2,7 @@
 
 🤗 If you value the effort I've put into crafting this open-source project and would like to show your support, consider subscribing to my [YouTube channel](https://www.youtube.com/@PricelessToolkit/videos). Your subscription goes a long way in backing my work.
 # ESPBell-MAX
- Intercom / Doorbell Module
+This "IoT Intercom / Doorbell" module enables you to stay informed whenever someone rings your doorbell or presses the intercom buttons. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification.
 
 ## ESPBell-MAX Code Configuration
 ### Used Arduino Libraries
