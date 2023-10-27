@@ -16,7 +16,7 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
   - 1 x "B+" Battery Voltage "Permanent output"
   - 1 x "E+" Battery Voltage "When ESPBell is enabled"
   - 1 x GPIO14
-  - 2 x GND "Only FOR! ET/B+/E+/GPIO14"
+  - 2 x GND "Only! for ET/B+/E+/GPIO14"
 - Status LEDs - Can be deactivated "PCB Jumper"
   - 1 x R1
   - 1 x R2
