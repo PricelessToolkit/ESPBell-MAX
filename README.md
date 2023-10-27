@@ -84,7 +84,8 @@ MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00"
 ## Home Assistant Configuration
 Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. We need to create 3 automations.
 
-### Automation 1 "Intecom DoorBell Notification"
+### Automation 1 "Intercom DoorBell Notification"
+This automation sends an interactive notification to phones with the "tag: intercom"
 ```
 alias: 🔔 Intercom DoorBell Notification
 description: ""
@@ -102,7 +103,7 @@ action:
         persistent: true
         importance: high
         channel: interphone
-        tag: interphone
+        tag: intercom
         image: /media/local/notify/doorbell.jpg
         actions:
           - action: interphone_ignore
@@ -118,7 +119,7 @@ action:
         persistent: true
         importance: high
         channel: interphone
-        tag: interphone
+        tag: intercom
         image: /media/local/notify/doorbell.jpg
         actions:
           - action: interphone_ignore
