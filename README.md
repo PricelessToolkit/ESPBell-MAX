@@ -2,7 +2,14 @@
 
 🤗 If you value the effort I've put into crafting this open-source project and would like to show your support, consider subscribing to my [YouTube channel](https://www.youtube.com/@PricelessToolkit/videos). Your subscription goes a long way in backing my work.
 # ESPBell-MAX
-This "IoT Intercom / Doorbell" module enables you to stay informed whenever someone rings your doorbell or presses the intercom buttons. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification.
+ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistant enables you to stay informed whenever someone rings your doorbell or presses the intercom button. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification.
+
+## Specifications
+- Power consumption
+  - Standby mode: 0
+  - Normal mode: 21uAs - a few seconds
+- MCU: esp12f
+- Battery type: Li-Ion 18650
 
 ## ESPBell-MAX Code Configuration
 ### Used Arduino Libraries
