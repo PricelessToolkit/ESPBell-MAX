@@ -82,7 +82,7 @@ MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00"
 
 
 ## Home Assistant Configuration
-We need to create 3 automations
+Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. We need to create 3 automations.
 
 ### Automation 1 "Intecom DoorBell Notification"
 ```
