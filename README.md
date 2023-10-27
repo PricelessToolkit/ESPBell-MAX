@@ -79,9 +79,9 @@ MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00"
 
 
 ## Home Assistant Configuration
-Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. We need to create 3 automations.
+Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. For all this to work we need to create three automations.
 
-### Automation 1 "Intercom DoorBell Notification"
+### Automation _1_
 This automation sends an interactive notification to phones with the "tag: intercom"
 ```
 alias: 🔔 Intercom DoorBell Notification
@@ -129,7 +129,7 @@ mode: single
 
 ```
 
-### Automation 2 "Intercom DoorBell ignore notification 'Dismiss'"
+### Automation _2_
 This automation clears notifications with the "tag: intercom" on phones when an ignore button on the notification is pressed.
 ```
 alias: 🔔 Intercom DoorBell ignore notification Dismiss
@@ -154,7 +154,7 @@ action:
 mode: single
 ```
 
-### Automation 3 "Intercom open the door and Dismiss notification"
+### Automation _3_
 This automatization enables the Relays R1/R2 by publishing the MQTT payload and clears notifications with the "tag: intercom" on phones when the notification button is pressed on one of the phones.
 Solid-state relays are controlled by publishing the MQTT payload. MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2
 
