@@ -5,6 +5,7 @@
 ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistant, enables you to stay informed whenever someone rings your doorbell or presses the intercom button. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification.
 
 ## Specifications
+- MCU: Esp12f
 - Power consumption
   - Standby mode: 0uAh
   - Normal mode: 21uAs - a few seconds
@@ -15,8 +16,14 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
   - 1 x "B+" Battery Voltage "permanent output"
   - 1 x "E+" Battery Voltage "When ESPBell is enabled"
   - 1 x GPIO14
-- MCU: esp12f
-- Battery type: Li-Ion 18650
+- Status LEDs - Can be deactivated "PCB Jumper"
+  - 1 x R1
+  - 1 x R2
+  - 1 x DoorBell
+  - 1x Power
+  - 1x On ESP module "Not used"
+- Battery Li-Ion 18650 "Not Included"
+- Cable with Connector 12P 30cm
 
 ## ESPBell-MAX Code Configuration
 ### Used Arduino Libraries
