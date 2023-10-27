@@ -102,13 +102,13 @@ action:
       data:
         persistent: true
         importance: high
-        channel: interphone
+        channel: intercom
         tag: intercom
         image: /media/local/notify/doorbell.jpg
         actions:
-          - action: interphone_ignore
+          - action: intercom_ignore
             title: Ignore ✖
-          - action: interphone_open
+          - action: intercom_open
             title: Open The Door 🔓
       title: DoorBell 🔔
       message: Quelqu'un à la porte
@@ -118,13 +118,13 @@ action:
       data:
         persistent: true
         importance: high
-        channel: interphone
+        channel: intercom
         tag: intercom
         image: /media/local/notify/doorbell.jpg
         actions:
-          - action: interphone_ignore
+          - action: intercom_ignore
             title: Ignore ✖
-          - action: interphone_open
+          - action: intercom_open
             title: Open The Door 🔓
       title: DoorBell 🔔
       message: Quelqu'un à la porte
@@ -139,7 +139,7 @@ description: ""
 trigger:
   - platform: event
     event_data:
-      action: interphone_ignore
+      action: intercom_ignore
     event_type: mobile_app_notification_action
 condition: []
 action:
@@ -147,12 +147,12 @@ action:
     data:
       message: clear_notification
       data:
-        tag: interphone
+        tag: intercom
   - service: notify.mobile_app_Second_Phone
     data:
       message: clear_notification
       data:
-        tag: interphone
+        tag: intercom
 mode: single
 ```
 
@@ -163,7 +163,7 @@ description: ""
 trigger:
   - platform: event
     event_data:
-      action: interphone_open
+      action: intercom_open
     event_type: mobile_app_notification_action
 condition: []
 action:
@@ -177,12 +177,12 @@ action:
     data:
       message: clear_notification
       data:
-        tag: interphone
+        tag: intercom
   - service: notify.mobile_app_Second_Phone
     data:
       message: clear_notification
       data:
-        tag: interphone
+        tag: intercom
 mode: single
 
 ```
