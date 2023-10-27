@@ -25,6 +25,7 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
   - 1x On ESP module "Not used"
 - Battery Li-Ion 18650 "Not Included"
 - Cable with Connector 12P 30cm
+- Button for Flashing
 
 ## ESPBell-MAX Code Configuration
 ### Used Arduino Libraries
