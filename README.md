@@ -133,7 +133,7 @@ mode: single
 ```
 
 ### Automation 2 "Intercom DoorBell ignore notification 'Dismiss'"
-This automation clears notifications on phones when an ignore button on the notification is pressed.
+This automation clears notifications with the "tag: intercom" on phones when an ignore button on the notification is pressed.
 ```
 alias: 🔔 Intercom DoorBell ignore notification Dismiss
 description: ""
@@ -158,7 +158,7 @@ mode: single
 ```
 
 ### Automation 3 "Intercom open the door and Dismiss notification"
-This automatization opens the door by publishing the MQTT payload and clears notifications on phones when the notification button is pressed on one of the phones.
+This automatization opens the door by publishing the MQTT payload and clears notifications with the "tag: intercom" on phones when the notification button is pressed on one of the phones.
 Solid-state relays are controlled by publishing the MQTT payload. MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2
 
 * "01" R1=OFF R2=ON
