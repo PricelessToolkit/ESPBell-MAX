@@ -5,10 +5,10 @@
 ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistant, enables you to stay informed whenever someone rings your doorbell or presses the intercom button. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification.
 
 ## Specifications
-- MCU: Esp12f
+- Based on ESP12F
 - Power consumption
   - Standby mode: 0uAh
-  - Normal mode: 21uAs - a few seconds
+  - When triggered: 21uAs - a few seconds
 - Input / Output
   - 2 x "R1/R2" SSR 2.4A
   - 1 x "DB" Input Optocoupler 30v Max "External Trigger"
