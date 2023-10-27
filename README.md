@@ -13,7 +13,7 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
   - 2 x "R1/R2" SSR 2.4A
   - 1 x "DB" Input Optocoupler 30v Max "External Trigger"
   - 1 x "ET" Input 5v Max "External Trigger"
-  - 1 x "B+" Battery Voltage "permanent output"
+  - 1 x "B+" Battery Voltage "Permanent output"
   - 1 x "E+" Battery Voltage "When ESPBell is enabled"
   - 1 x GPIO14
 - Status LEDs - Can be deactivated "PCB Jumper"
