@@ -34,7 +34,7 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 - Button for flashing Firmware
 
 ## PCB Assembly
-This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component, reducing the chances of errors to a minimum.
+This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
 
 ## ESPBell-MAX Code Configuration
 ### Used Arduino Libraries
