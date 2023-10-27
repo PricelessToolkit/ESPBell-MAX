@@ -6,7 +6,7 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 
 ## Specifications
 - Power consumption
-  - Standby mode: 0
+  - Standby mode: 0uAh
   - Normal mode: 21uAs - a few seconds
 - MCU: esp12f
 - Battery type: Li-Ion 18650
