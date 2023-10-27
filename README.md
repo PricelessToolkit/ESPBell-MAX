@@ -45,11 +45,11 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 #include "ESP8266WiFi.h"
 #include <PubSubClient.h>
 ```
-### All settings are done in the file "config.h"
+### All configurations are done in the file "config.h"
 ```c
 #define WIFI_SSID "Your_WIFI_SSID"
 #define WIFI_AUTH "Your_WIFI_Password"
-#define DATA_WIFI_CH 6
+#define DATA_WIFI_CH 6 // Put your Wi-Fi channel and disable channel hopping in your WI-FI Access Point
 #define DATA_WIFI_BSSID {0xAA, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA} // Change only AA part.
 ```
 ```c
