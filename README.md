@@ -158,6 +158,7 @@ mode: single
 ```
 
 ### Automation 3 "Intercom open the door and Dismiss notification"
+This automatization opens the door by publishing the MQTT payload and clears notifications on phones when the notification button is pressed on one of the phones.
 ```
 alias: 🔔 Intercom open the door and Dismiss notification
 description: ""
