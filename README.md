@@ -59,9 +59,8 @@ int autoOff = 1; // 0 = DISABLE / 1 = ENABLE : Powerig off automaticaly after "o
 ```
 
 ### Solid-state relays are controlled by publishing MQTT payload
-* MQTT Command Topic is "homeassistant/sensor/espbell-max/command"
-* Payload is "00" firs digit is controlling R1 second digit R2
-* 0 = OFF / 1 = ON
+MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" firs digit is controlling R1 second digit R2
+
 * "01" R1=OFF R2=ON
 * "11" R1=ON R2=ON
 * "10" R1=ON R2=OFF
