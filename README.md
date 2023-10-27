@@ -73,7 +73,7 @@ int autoOff = 1; // 0 = DISABLE / 1 = ENABLE : Powerig off automaticaly after "o
 ```
 
 ### Solid-state relays are controlled by publishing MQTT payload
-MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" firs digit is controlling R1 second digit R2
+MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2
 
 * "01" R1=OFF R2=ON
 * "11" R1=ON R2=ON
@@ -159,6 +159,13 @@ mode: single
 
 ### Automation 3 "Intercom open the door and Dismiss notification"
 This automatization opens the door by publishing the MQTT payload and clears notifications on phones when the notification button is pressed on one of the phones.
+Solid-state relays are controlled by publishing the MQTT payload. MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2
+
+* "01" R1=OFF R2=ON
+* "11" R1=ON R2=ON
+* "10" R1=ON R2=OFF
+* "00" R1=OFF R2=OFF
+
 ```
 alias: 🔔 Intercom open the door and Dismiss notification
 description: ""
