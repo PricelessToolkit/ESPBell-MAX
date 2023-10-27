@@ -5,6 +5,12 @@
  Intercom / Doorbell Module
 
 ## ESPBell-MAX Code Configuration
+### Used Arduino Libraries
+```c
+#include "ESP8266WiFi.h"
+#include <PubSubClient.h>
+```
+### All settings are done in the file "config.h"
 ```c
 #define WIFI_SSID "Your_WIFI_SSID"
 #define WIFI_AUTH "Your_WIFI_Password"
@@ -31,7 +37,7 @@ const long openTime = 2000;  // How long relays is on.
 int autoOff = 1; // 0 = DISABLE / 1 = ENABLE : Powerig off automaticaly after "openTime" : if is set to 0 ESPBell will power down after upTime.
 ```
 
-
+### Solid-state relays are controlled by publishing MQTT payload
 * MQTT Command Topic is "homeassistant/sensor/espbell-max/command"
 * Payload is "00" firs digit is controlling R1 second digit R2
 * 0 = OFF / 1 = ON
