@@ -133,7 +133,7 @@ mode: single
 ```
 
 ### Automation 2 "Intercom DoorBell ignore notification 'Dismiss'"
-This automation clears notifications on phones when a button on the notification is pressed.
+This automation clears notifications on phones when an ignore button on the notification is pressed.
 ```
 alias: 🔔 Intercom DoorBell ignore notification Dismiss
 description: ""
