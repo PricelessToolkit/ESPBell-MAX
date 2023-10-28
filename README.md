@@ -94,7 +94,7 @@ Here is a multi-user configuration, which means that a message is sent to severa
 This automation sends an interactive notification with the "tag: intercom" to phones.
 
 <details>
-  <summary>Explanation click me</summary>
+  <summary>Explanation click here</summary>
   Alias: This is a user-defined name or label for the automation. In this case, it's given the name "🔔 Intercom DoorBell Notification," which suggests that it's related to receiving notifications for an intercom or doorbell event.
 
 Description: This field is left empty, so there's no additional description provided for this automation.
@@ -162,7 +162,7 @@ mode: single
 This automation clears notifications with the "tag: intercom" on phones when an ignore button on the notification is pressed.
 
 <details>
-  <summary>Explanation click me</summary>
+  <summary>Explanation click here</summary>
 Alias: The alias is a user-defined name or label for the automation, and in this case, it's named "🔔 Intercom DoorBell ignore notification Dismiss." This name suggests that the automation is related to dismissing or ignoring notifications for an intercom or doorbell event.
 
 Description: The description field is left empty, so there's no additional description provided for this automation.
