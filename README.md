@@ -73,7 +73,7 @@ This project is open-source, allowing you to assemble ESPBell-MAX on your own. T
 #include <PubSubClient.h>
 ```
 
-### If you are using ESP8266 for the first time, you need To install the ESP8266 board and PubSubClient library in your Arduino IDE.
+If you are using ESP8266 for the first time, you need To install the ESP8266 board and PubSubClient library in your Arduino IDE.
 - In your Arduino IDE, go to File> Preferences.
 - Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into the “Additional Boards Manager URLs” field. Then, click the “OK” button
 - Open the Boards Manager. Go to Tools > Board > Boards Manager.
@@ -81,7 +81,7 @@ This project is open-source, allowing you to assemble ESPBell-MAX on your own. T
 - Search for PubSubClient and press the install button.
 
 
-For board configuration, see the screenshot below
+For board configuration in IDE, see the screenshot below
 <details>
   <summary>Board config Screenshot</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
