@@ -198,6 +198,15 @@ To upload the sketch into ESPBell-MAX you will need two things.
 - Regular USB-TTL 3.3v adapter. I have [open-source USB-TTL](https://github.com/PricelessToolkit/UNIProg_Programmer) project, in case you don’t have a TTL adapter yet and want to assemble it yourself.
 - Pogo pin Clamp Fixture "single row 6 Pin 2.54mm spacing" or you can solder wires directly to ESPBell-MAX for programming.
 
+### _USB-TTL Wiring diagram_
+
+| USB-TTL | ESPBell-MAX |
+| ------- | ----------- |
+| TX      | RX          |
+| RX      | TX          |
+| GND     | GND         |
+| 3.3v    | 3.3V        |
+
 ## Home Assistant Configuration
 > [!NOTE]
 > After connection, Home Assistant will automatically  discover ESPBell-MAX with 3 sensors.
