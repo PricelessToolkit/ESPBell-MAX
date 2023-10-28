@@ -124,7 +124,7 @@ autoOff: This parameter can be set to either 0 or 1:
 </details>
 
 > [!IMPORTANT]
-> Select your 'upTime' values carefully to ensure you have sufficient time for picking up your phone, checking notifications, and pressing the action button, along with a little extra time in reserve for added convenience.
+> Select your 'upTime' value carefully to ensure you have sufficient time for picking up your phone, checking notifications, and pressing the action button, along with a little extra time in reserve for added convenience.
 
 ```c
 // 1000 = 1s"
