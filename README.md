@@ -41,7 +41,13 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
 
 ## Arduino IDE Configuration
+### If you are using ESP8266 for the first time, you need To install the ESP8266 board in your Arduino IDE.
+- In your Arduino IDE, go to File> Preferences.
+- Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into the “Additional Boards Manager URLs” field. Then, click the “OK” button
+- Open the Boards Manager. Go to Tools > Board > Boards Manager.
+- Search for ESP8266 and press install button for the “ESP8266 by ESP8266 Community“
 
+For board configuration, see the screenshot below
 <details>
   <summary>Arduino config Screenshot</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
