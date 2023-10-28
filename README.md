@@ -54,7 +54,7 @@ This project is open-source, allowing you to assemble ESPBell-MAX on your own. T
 
 ## Wiring diagram ESPBell-Max to Intercom | Doorbell
 
-### Intercom
+### _Intercom_
 <details>
   <summary>Differences Between 4+N and 1+N Intercom Systems. Click here</summary>
 
@@ -85,7 +85,7 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 > [!WARNING]
 > Currently, only the 4+N Intercom system is supported by ESPBell-MAX.
 
-### Doorbell
+### _Doorbell_
 coon...
 
 ## Arduino IDE Configuration
