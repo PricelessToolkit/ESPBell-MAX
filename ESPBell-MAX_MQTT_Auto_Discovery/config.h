@@ -21,7 +21,7 @@ const int mqtt_port = 1883;
 // 1000 = 1s"
 const long upTime = 15000;  // How long to wait after wakeup before powering off "Latch PIN to LOW" 
 const long openTime = 2000;  // How long relays is on.
-int autoOff = 1; // 0 = DISABLE / 1 = ENABLE : Powerig off automaticaly after "openTime" : if is set to 0 ESPBell will power down after upTime.
+const int autoOff = 1; // 0 = DISABLE / 1 = ENABLE : Powerig off automaticaly after "openTime" : if is set to 0 ESPBell will power down after upTime.
 
 
 
