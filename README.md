@@ -77,6 +77,11 @@ To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead,
 #define DATA_WIFI_CH 6 // Put your Wi-Fi channel and disable channel hopping in your WI-FI Access Point
 #define DATA_WIFI_BSSID {0xAA, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA} // Change only AA part.
 ```
+### Local Network Settings
+As the DHCP-based IP address assignment may introduce certain delays, we can optimize the process by manually assigning and registering the IP address.
+> [!IMPORTANT]
+> Use IP address outside of DHCP Range
+
 ```c
 // IP address, network mask, Gateway, DNS
 #define DATA_IPADDR IPAddress(192,168,99,2) // Use IP address outside of DHCP Range 
@@ -84,6 +89,12 @@ To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead,
 #define DATA_GATEWY IPAddress(192,168,99,1)
 #define DATA_DNS1   IPAddress(192,168,99,1)
 ```
+### MQTT Settings
+Fill in Mosquitto broker credentials and IP address.
+
+> [!IMPORTANT]
+> SSL is disabled.
+
 ```c
 const char* mqtt_username = "Your_MQTT_Username";
 const char* mqtt_password = "Your_MQTT_Password";
