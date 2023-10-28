@@ -16,7 +16,7 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
   - UNIProg Programmer [https://www.pricelesstoolkit.com/](https://www.pricelesstoolkit.com/en/projects/33-uniprog-uartupdi-programmer-33v.html)
 
 ## Specifications
-- Based on ESP12F
+- Based on ESP12F "Programmable via pads on the PCB"
 - Power consumption
   - Standby mode: 0uAh
   - When triggered: 21uAs - a few seconds
