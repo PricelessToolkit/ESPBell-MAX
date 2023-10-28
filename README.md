@@ -94,7 +94,7 @@ Here is a multi-user configuration, which means that a message is sent to severa
 This automation sends an interactive notification with the "tag: intercom" to phones.
 
 <details>
-  <summary>Explanation</summary>
+  <summary>Explanation click me</summary>
   Alias: This is a user-defined name or label for the automation. In this case, it's given the name "🔔 Intercom DoorBell Notification," which suggests that it's related to receiving notifications for an intercom or doorbell event.
 
 Description: This field is left empty, so there's no additional description provided for this automation.
