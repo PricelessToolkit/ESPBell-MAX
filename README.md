@@ -82,7 +82,7 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/diagrame.png"/>
 </details>
 
-> [!IMPORTANT]
+> [!WARNING]
 > Currently, only the 4+N Intercom system is supported by ESPBell-MAX.
 
 ### Doorbell
