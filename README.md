@@ -52,7 +52,40 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 ## PCB Assembly
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
 
-## Connection diagram ESPBell-Max to Intercom | Doorbell
+## Wiring diagram ESPBell-Max to Intercom | Doorbell
+
+### _Intercom_
+<details>
+  <summary>Differences Between 4+N and 1+N Intercom Systems. Click here</summary>
+
+In the world of intercom systems, two common configurations stand out: 4+N and 1+N. Understanding the distinctions between these setups is crucial for successful installation and operation. Here's a quick overview:
+
+4+N Intercom Systems:
+
+In a 4+N system, the "4" signifies the presence of four distinct wires, each with a specific purpose.
+These four wires are typically allocated as follows: one for the microphone, one for the speaker, one for the doorbell, and one for the lock.
+Additionally, the "N" wire represents the neutral wire, which is used for the electrical current's return path.
+4+N systems offer separate wiring and control for microphone, speaker, doorbell, and lock functions.
+
+1+N Intercom Systems:
+
+In contrast, a 1+N system streamlines the wiring process by combining audio communication and power supply over a single wire.
+The "1" in 1+N indicates that one wire is used for both audio communication and power transmission.
+Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
+1+N systems simplify wiring, using a single wire for audio and power, making installation more straightforward.
+
+
+</details>
+
+<details>
+  <summary>4+N Intercom System wiring diagram. Click here</summary>
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/diagrame.png"/>
+</details>
+
+> [!WARNING]
+> Currently, only the 4+N Intercom system is supported by ESPBell-MAX.
+
+### _Doorbell_
 soon...
 
 ## Arduino IDE Configuration
@@ -80,7 +113,7 @@ For board configuration, see the screenshot below
 > [!NOTE]  
 > All configurations are done in the file "config.h"
 
-### WI-FI Settings
+### _WI-FI Settings_
 To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead, we simply provide the access point's name, channel, and MAC address. This efficient method significantly shortens the connection time to the access point, taking just about 300 milliseconds.
 
 > [!IMPORTANT]
@@ -92,7 +125,7 @@ To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead,
 #define DATA_WIFI_CH 6 // Put your Wi-Fi channel and disable channel hopping in your WI-FI Access Point
 #define DATA_WIFI_BSSID {0xAA, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA} // Change only AA part.
 ```
-### Local Network Settings
+### _Local Network Settings_
 As the DHCP-based IP address assignment may introduce certain delays, we can optimize the process by manually assigning and registering the IP address.
 > [!IMPORTANT]
 > Use IP address outside of DHCP Range.
@@ -104,7 +137,7 @@ As the DHCP-based IP address assignment may introduce certain delays, we can opt
 #define DATA_GATEWY IPAddress(192,168,99,1)
 #define DATA_DNS1   IPAddress(192,168,99,1)
 ```
-### MQTT Settings
+### _MQTT Settings_
 Fill in Mosquitto broker credentials and IP address.
 
 > [!IMPORTANT]
@@ -116,7 +149,7 @@ const char* mqtt_password = "Your_MQTT_Password";
 const char* mqtt_server = "MQTT/HomeAssistant_IP";
 const int mqtt_port = 1883;
 ```
-### Timing Settings
+### _Timing Settings_
 Optimal performance and energy efficiency hinge upon these configurations, consisting of three critical parameters. It's important to note that 1000ms equates to 1 second.
 <details>
   <summary>Explanation click here</summary>
@@ -153,7 +186,7 @@ Here is a multi-user configuration, which means that a message is sent to severa
 ```
 
 
-### Automation _1_
+### _Automation 1_
 This automation sends an interactive notification with the "tag: intercom" to phones.
 
 <details>
@@ -221,7 +254,7 @@ mode: single
 
 ```
 
-### Automation _2_
+### _Automation 2_
 This automation clears notifications with the "tag: intercom" on phones when an ignore button on the notification is pressed.
 
 <details>
@@ -272,7 +305,7 @@ action:
 mode: single
 ```
 
-### Automation _3_
+### _Automation 3_
 This automatization enables the Relays R1/R2 by publishing the MQTT payload and clears notifications with the "tag: intercom" on phones when the notification button is pressed on one of the phones.
 Solid-state relays are controlled by publishing the MQTT payload. MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2.
 
