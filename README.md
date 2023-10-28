@@ -49,7 +49,7 @@ This project is open-source, allowing you to assemble ESPBell-MAX on your own. T
 
 For board configuration, see the screenshot below
 <details>
-  <summary>Arduino config Screenshot</summary>
+  <summary>Board config Screenshot</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
 </details>
 
