@@ -54,7 +54,10 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
 
 ## Schematic
-Soon...
+<details>
+  <summary>View schematic. Click here</summary>
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/schematic.jpg"/>
+</details>
 
 ## Wiring diagram ESPBell-Max to Intercom | Doorbell
 
@@ -180,7 +183,7 @@ autoOff: This parameter can be set to either 0 or 1:
 // 1000 = 1s"
 const long upTime = 15000;  // How long to wait after wakeup before powering off "Latch PIN to LOW" 
 const long openTime = 2000;  // How long relays is on.
-int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after "openTime" // if is set to 0 ESPBell will power down after upTime.
+const int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after "openTime" // if is set to 0 ESPBell will power down after upTime.
 ```
 
 
