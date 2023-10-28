@@ -116,7 +116,7 @@ For board configuration, see the screenshot below
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
 </details>
 
-## ESPBell-MAX Intercom Code Configuration
+## ESPBell-MAX Code Configuration
 > [!NOTE]  
 > All configurations are done in the file "config.h"
 
@@ -178,11 +178,6 @@ const long upTime = 15000;  // How long to wait after wakeup before powering off
 const long openTime = 2000;  // How long relays is on.
 int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after "openTime" // if is set to 0 ESPBell will power down after upTime.
 ```
-
-## ESPBell-MAX Doorbell Code Configuration
-> [!NOTE]  
-> All configurations are done in the file "config.h"
-soon...
 
 
 ## Home Assistant Configuration
