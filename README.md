@@ -45,7 +45,7 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 > If you're new to Arduino-related matters, please refrain from asking basic questions like "how to install Arduino IDE". There are already plenty of excellent tutorials available on the internet. If you encounter any issues, remember that providing detailed information about the problem will help me offer more effective assistance. More information equals better help!
 
 > [!WARNING]
-> I would strongly advise against attempting to assemble this PCB on your own if you lack prior experience in soldering or working with ESP or Arduino boards.
+> I would strongly advise against attempting to assemble this PCB on your own if you have no experience "0%" in soldering or working with ESP or Arduino boards.
 
 
 ## PCB Assembly
