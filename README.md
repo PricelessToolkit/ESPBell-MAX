@@ -80,7 +80,7 @@ To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead,
 ### Local Network Settings
 As the DHCP-based IP address assignment may introduce certain delays, we can optimize the process by manually assigning and registering the IP address.
 > [!IMPORTANT]
-> Use IP address outside of DHCP Range
+> Use IP address outside of DHCP Range.
 
 ```c
 // IP address, network mask, Gateway, DNS
