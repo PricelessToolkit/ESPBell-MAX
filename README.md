@@ -3,8 +3,10 @@
 🤗 If you value the effort I've put into crafting this open-source project and would like to show your support, consider subscribing to my [YouTube channel](https://www.youtube.com/@PricelessToolkit/videos). Your subscription goes a long way in backing my work.
 # ESPBell-MAX and [ESPBell-LITEl](https://github.com/PricelessToolkit/ESPBell-LITE)
 ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistant, enables you to stay informed whenever someone rings your doorbell or presses the intercom button. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification.
-
+<details>
+  <summary>Notification Screenshot</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/notification_m.jpg"/>
+</details>
 
 ### Links
 
