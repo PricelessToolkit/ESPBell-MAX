@@ -183,7 +183,7 @@ int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after
 ## Home Assistant Configuration
 > [!NOTE]
 > After connection, Home Assistant will automatically  discover ESPBell-MAX with 3 sensors.
-> - Bell    | Statuses is OPEN|CLOSE
+> - Bell    | Statuses is OPEN / CLOSE
 > - RSSI    | in dBm
 > - Battery | in percent 0-100% "3.2-4.2V"
 
