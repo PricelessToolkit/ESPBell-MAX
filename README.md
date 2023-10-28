@@ -186,7 +186,7 @@ int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after
 > - Bell    | Statuses is OPEN / CLOSE
 > - RSSI    | in dBm
 > - Battery | in percent 0-100% "3.2-4.2V"
-> Because the ESP8266 ADC is inaccurate, measurements can fluctuate
+> Because the ESP8266 ADC is inaccurate, measurements can fluctuate.
 
 Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. For all this to work we need to create "three" automation, but before that, in this example, you need to change a minimum few things.
 - Image file path that is used as a background for Notification.
