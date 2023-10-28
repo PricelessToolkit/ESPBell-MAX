@@ -116,7 +116,7 @@ For board configuration, see the screenshot below
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
 </details>
 
-## ESPBell-MAX Code Configuration
+## ESPBell-MAX Intercom Code Configuration
 > [!NOTE]  
 > All configurations are done in the file "config.h"
 
