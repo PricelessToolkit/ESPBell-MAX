@@ -179,6 +179,11 @@ const long openTime = 2000;  // How long relays is on.
 int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after "openTime" // if is set to 0 ESPBell will power down after upTime.
 ```
 
+## ESPBell-MAX Doorbell Code Configuration
+> [!NOTE]  
+> All configurations are done in the file "config.h"
+soon...
+
 
 ## Home Assistant Configuration
 Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. For all this to work we need to create "three" automation, but before that, in this example, you need to change a minimum few things.
