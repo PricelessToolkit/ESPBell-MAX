@@ -53,10 +53,36 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
 
 ## Connection diagram ESPBell-Max to Intercom | Doorbell
+
+<details>
+  <summary>Differences Between 4+N and 1+N Intercom Systems. Click here</summary>
+
+In the world of intercom systems, two common configurations stand out: 4+N and 1+N. Understanding the distinctions between these setups is crucial for successful installation and operation. Here's a quick overview:
+
+4+N Intercom Systems:
+
+In a 4+N system, the "4" signifies the presence of four distinct wires, each with a specific purpose.
+These four wires are typically allocated as follows: one for the microphone, one for the speaker, one for the doorbell, and one for the lock.
+Additionally, the "N" wire represents the neutral wire, which is used for the electrical current's return path.
+4+N systems offer separate wiring and control for microphone, speaker, doorbell, and lock functions.
+
+1+N Intercom Systems:
+
+In contrast, a 1+N system streamlines the wiring process by combining audio communication and power supply over a single wire.
+The "1" in 1+N indicates that one wire is used for both audio communication and power transmission.
+Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
+1+N systems simplify wiring, using a single wire for audio and power, making installation more straightforward.
+
+
+</details>
+
 <details>
   <summary>4+N System diagram. Click here</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/diagrame.png"/>
 </details>
+
+> [!IMPORTANT]
+> Currently, only the 4+N system is supported by ESPBell-MAX.
 
 ## Arduino IDE Configuration
 ### Used Arduino Libraries
