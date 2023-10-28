@@ -37,6 +37,15 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 - Battery type Li-Ion 18650
 - Button for flashing Firmware
 
+## Before you start
+> [!NOTE]
+> I trust that everything is crystal clear as I've made every effort to provide a step-by-step explanation on the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to open a new discussion topic in the dedicated tab.
+
+> [!IMPORTANT]
+> If you're new to Arduino-related matters, please refrain from asking how to install the Arduino IDE. There are already plenty of excellent tutorials available on the internet. And if you encounter any issues, remember that providing detailed information about the problem will help me offer more effective assistance. More information equals better help!
+
+
+
 ## PCB Assembly
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
 
@@ -295,8 +304,4 @@ action:
 mode: single
 
 ```
-> [!NOTE]
-> I trust that everything is crystal clear as I've made every effort to provide a step-by-step explanation on the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to open a new discussion topic in the dedicated tab.
 
-> [!IMPORTANT]
-> If you're new to Arduino-related matters, please refrain from asking how to install the Arduino IDE. There are already plenty of excellent tutorials available on the internet. And if you encounter any issues, remember that providing detailed information about the problem will help us offer more effective assistance. More information equals better help!
