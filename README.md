@@ -86,7 +86,7 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 > Currently, only the 4+N Intercom system is supported by ESPBell-MAX.
 
 ### _Doorbell_
-coon...
+soon...
 
 ## Arduino IDE Configuration
 ### Used Arduino Libraries
