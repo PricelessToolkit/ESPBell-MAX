@@ -118,7 +118,7 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 
 ### If you are using ESP8266 for the first time, you need To install the ESP8266 board and PubSubClient library in your Arduino IDE.
 - In your Arduino IDE, go to File> Preferences.
-- Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into the “Additional Boards Manager URLs” field. Then, click the “OK” button
+- Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into the “Additional Boards Manager URLs” field. Then, click the “OK” button
 - Open the Boards Manager. Go to Tools > Board > Boards Manager.
 - Search for ESP8266 and press the install button for the “ESP8266 by ESP8266 Community“
 - Search for PubSubClient and press the install button.
