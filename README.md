@@ -1,6 +1,7 @@
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/banner.jpg"/>
 
-🤗 If you value the effort I've put into crafting this open-source project and would like to show your support, consider subscribing to my [YouTube channel](https://www.youtube.com/@PricelessToolkit/videos). Your subscription goes a long way in backing my work.
+🤗 Please consider supporting my work by subscribing to my [YouTube channel](https://www.youtube.com/@PricelessToolkit/videos). Your subscription goes a long way in backing my work.
+
 # ESPBell-MAX and [ESPBell-LITE](https://github.com/PricelessToolkit/ESPBell-LITE)
 ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistant, enables you to stay informed whenever someone rings your doorbell or presses the intercom button. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification. See the screenshot below.
 <details>
@@ -181,6 +182,13 @@ int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after
 
 
 ## Home Assistant Configuration
+> [!NOTE]
+> After connection, Home Assistant will automatically  discover ESPBell-MAX with 3 sensors.
+> - Bell    | Statuses is OPEN / CLOSE
+> - RSSI    | in dBm
+> - Battery | in percent 0-100% "3.2-4.2V"
+> Because the ESP8266 ADC is inaccurate, measurements can fluctuate.
+
 Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. For all this to work we need to create "three" automation, but before that, in this example, you need to change a minimum few things.
 - Image file path that is used as a background for Notification.
 - The name of the mobile device that is connected to the Home Assistant. In my case, it's "doogee_v20pro" and "Second_Phone"
