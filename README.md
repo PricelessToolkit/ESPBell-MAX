@@ -113,7 +113,7 @@ For board configuration, see the screenshot below
 > [!NOTE]  
 > All configurations are done in the file "config.h"
 
-### WI-FI Settings
+### _WI-FI Settings_
 To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead, we simply provide the access point's name, channel, and MAC address. This efficient method significantly shortens the connection time to the access point, taking just about 300 milliseconds.
 
 > [!IMPORTANT]
@@ -125,7 +125,7 @@ To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead,
 #define DATA_WIFI_CH 6 // Put your Wi-Fi channel and disable channel hopping in your WI-FI Access Point
 #define DATA_WIFI_BSSID {0xAA, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA} // Change only AA part.
 ```
-### Local Network Settings
+### _Local Network Settings_
 As the DHCP-based IP address assignment may introduce certain delays, we can optimize the process by manually assigning and registering the IP address.
 > [!IMPORTANT]
 > Use IP address outside of DHCP Range.
@@ -137,7 +137,7 @@ As the DHCP-based IP address assignment may introduce certain delays, we can opt
 #define DATA_GATEWY IPAddress(192,168,99,1)
 #define DATA_DNS1   IPAddress(192,168,99,1)
 ```
-### MQTT Settings
+### _MQTT Settings_
 Fill in Mosquitto broker credentials and IP address.
 
 > [!IMPORTANT]
@@ -149,7 +149,7 @@ const char* mqtt_password = "Your_MQTT_Password";
 const char* mqtt_server = "MQTT/HomeAssistant_IP";
 const int mqtt_port = 1883;
 ```
-### Timing Settings
+### _Timing Settings_
 Optimal performance and energy efficiency hinge upon these configurations, consisting of three critical parameters. It's important to note that 1000ms equates to 1 second.
 <details>
   <summary>Explanation click here</summary>
@@ -186,7 +186,7 @@ Here is a multi-user configuration, which means that a message is sent to severa
 ```
 
 
-### Automation _1_
+### _Automation 1_
 This automation sends an interactive notification with the "tag: intercom" to phones.
 
 <details>
@@ -254,7 +254,7 @@ mode: single
 
 ```
 
-### Automation _2_
+### _Automation 2_
 This automation clears notifications with the "tag: intercom" on phones when an ignore button on the notification is pressed.
 
 <details>
@@ -305,7 +305,7 @@ action:
 mode: single
 ```
 
-### Automation _3_
+### _Automation 3_
 This automatization enables the Relays R1/R2 by publishing the MQTT payload and clears notifications with the "tag: intercom" on phones when the notification button is pressed on one of the phones.
 Solid-state relays are controlled by publishing the MQTT payload. MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2.
 
