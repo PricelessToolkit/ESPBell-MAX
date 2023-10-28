@@ -52,8 +52,9 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 ## PCB Assembly
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
 
-## Connection diagram ESPBell-Max to Intercom | Doorbell
+## Wiring diagram ESPBell-Max to Intercom | Doorbell
 
+### Intercom
 <details>
   <summary>Differences Between 4+N and 1+N Intercom Systems. Click here</summary>
 
@@ -77,12 +78,15 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 </details>
 
 <details>
-  <summary>4+N System diagram. Click here</summary>
+  <summary>4+N Intercom System wiring diagram. Click here</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/diagrame.png"/>
 </details>
 
 > [!IMPORTANT]
-> Currently, only the 4+N system is supported by ESPBell-MAX.
+> Currently, only the 4+N Intercom system is supported by ESPBell-MAX.
+
+### Doorbell
+coon...
 
 ## Arduino IDE Configuration
 ### Used Arduino Libraries
