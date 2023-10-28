@@ -101,6 +101,19 @@ const char* mqtt_password = "Your_MQTT_Password";
 const char* mqtt_server = "MQTT/HomeAssistant_IP";
 const int mqtt_port = 1883;
 ```
+### Timing Settings
+Optimal performance and energy efficiency hinge upon these configurations, consisting of three critical parameters. It's important to note that 1000ms equates to 1 second.
+<details>
+  <summary>Explanation click here</summary>
+upTime: This variable represents the time delay, in milliseconds, before initiating a 'Power Off' operation by setting the Latch PIN to LOW. You can adjust this value to determine how long the system should wait after waking up before powering down.
+
+openTime: This variable sets the duration, in milliseconds, during which the relays remain active. Modify this value to control how long the relays stay on.
+
+autoOff: This parameter can be set to either 0 or 1:
+- 0: DISABLED - ESPBell will power down after the 'upTime' specified.
+- 1: ENABLED - ESPBell will automatically power down after the 'openTime' has elapsed.
+</details>
+
 ```c
 // 1000 = 1s"
 const long upTime = 15000;  // How long to wait after wakeup before powering off "Latch PIN to LOW" 
