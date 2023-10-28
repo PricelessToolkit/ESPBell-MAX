@@ -66,11 +66,11 @@ const int mqtt_port = 1883;
 // 1000 = 1s"
 const long upTime = 15000;  // How long to wait after wakeup before powering off "Latch PIN to LOW" 
 const long openTime = 2000;  // How long relays is on.
-int autoOff = 1; // 0 = DISABLE / 1 = ENABLE : Powerig off automaticaly after "openTime" : if is set to 0 ESPBell will power down after upTime.
+int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after "openTime" // if is set to 0 ESPBell will power down after upTime.
 ```
 
-### Solid-state relays are controlled by publishing MQTT payload
-MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2
+### Solid-state relays are controlled by publishing the MQTT payload
+MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2.
 
 * "01" R1=OFF R2=ON
 * "11" R1=ON R2=ON
@@ -82,7 +82,7 @@ MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00"
 Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. For all this to work we need to create three automations.
 
 ### Automation _1_
-This automation sends an interactive notification with the "tag: intercom" to phones 
+This automation sends an interactive notification with the "tag: intercom" to phones.
 ```
 alias: 🔔 Intercom DoorBell Notification
 description: ""
@@ -156,7 +156,7 @@ mode: single
 
 ### Automation _3_
 This automatization enables the Relays R1/R2 by publishing the MQTT payload and clears notifications with the "tag: intercom" on phones when the notification button is pressed on one of the phones.
-Solid-state relays are controlled by publishing the MQTT payload. MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2
+Solid-state relays are controlled by publishing the MQTT payload. MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2.
 
 * "01" R1=OFF R2=ON
 * "11" R1=ON R2=ON
