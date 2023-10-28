@@ -42,6 +42,11 @@ This project is open-source, allowing you to assemble ESPBell-MAX on your own. T
 
 ## Arduino IDE Configuration
 
+<details>
+  <summary>Arduino config Screenshot</summary>
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
+</details>
+
 ## ESPBell-MAX Code Configuration
 ### Used Arduino Libraries
 ```c
@@ -110,7 +115,7 @@ The second action is similar to the first but uses the "notify.mobile_app_Second
 Mode: The mode is set to "single," which means that the automation will only run once for each trigger event. Subsequent trigger events will not cause the automation to run again until the current execution has been completed.
 </details>
 
-```
+```yaml
 alias: 🔔 Intercom DoorBell Notification
 description: ""
 trigger:
@@ -184,7 +189,7 @@ The second action is identical to the first but uses the "notify.mobile_app_Seco
 Mode: The mode is set to "single," which means that the automation will only run once for each trigger event. Subsequent trigger events with the "intercom_ignore" action will trigger this automation, but it will only clear the notification once.
 </details>
 
-```
+```yaml
 alias: 🔔 Intercom DoorBell ignore notification Dismiss
 description: ""
 trigger:
@@ -216,7 +221,7 @@ Solid-state relays are controlled by publishing the MQTT payload. MQTT Command T
 * "10" R1=ON R2=OFF
 * "00" R1=OFF R2=OFF
 
-```
+```yaml
 alias: 🔔 Intercom open the door and Dismiss notification
 description: ""
 trigger:
