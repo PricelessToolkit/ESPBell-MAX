@@ -69,14 +69,6 @@ const long openTime = 2000;  // How long relays is on.
 int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after "openTime" // if is set to 0 ESPBell will power down after upTime.
 ```
 
-### Solid-state relays are controlled by publishing the MQTT payload
-MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00" The first digit is controlling R1 second digit R2.
-
-* "01" R1=OFF R2=ON
-* "11" R1=ON R2=ON
-* "10" R1=ON R2=OFF
-* "00" R1=OFF R2=OFF
-
 
 ## Home Assistant Configuration
 Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. For all this to work we need to create three automation, but before that, in this example, you need to change a few things.
@@ -92,6 +84,26 @@ Here is a multi-user configuration, which means that a message is sent to severa
 
 ### Automation _1_
 This automation sends an interactive notification with the "tag: intercom" to phones.
+
+<details>
+  <summary>Explanation click here</summary>
+  Alias: This is a user-defined name or label for the automation. In this case, it's given the name "🔔 Intercom DoorBell Notification," which suggests that it's related to receiving notifications for an intercom or doorbell event.
+
+Description: This field is left empty, so there's no additional description provided for this automation.
+
+Trigger: The trigger specifies the event or condition that will start the automation. In this case, it is triggered when the state of the "binary_sensor.espbell_max_bell" changes to "on." This implies that the automation will run when the binary sensor named "espbell_max_bell" switches from an off state to an on state.
+
+Condition: There are no additional conditions specified. This means the automation will proceed without any additional conditions beyond the trigger.
+
+Action: The action section defines what should happen when the trigger condition is met. In this case, there are two actions defined:
+
+The first action uses the "notify.mobile_app_doogee_v20pro" service to send a notification to a mobile device. The notification includes a message "Someone at the door" and is configured with various data attributes, including a persistent notification, high importance, a specified channel ("intercom"), and a tag ("intercom"). It also includes an image file path for the notification and two actions that can be taken by the recipient: "Ignore ✖" and "Open The Door 🔓." The title and message of the notification are also specified in two languages (English and French).
+
+The second action is similar to the first but uses the "notify.mobile_app_Second_Phone" service to send the same notification to another mobile device.
+
+Mode: The mode is set to "single," which means that the automation will only run once for each trigger event. Subsequent trigger events will not cause the automation to run again until the current execution has been completed.
+</details>
+
 ```
 alias: 🔔 Intercom DoorBell Notification
 description: ""
@@ -140,6 +152,32 @@ mode: single
 
 ### Automation _2_
 This automation clears notifications with the "tag: intercom" on phones when an ignore button on the notification is pressed.
+
+<details>
+  <summary>Explanation click here</summary>
+Alias: The alias is a user-defined name or label for the automation, and in this case, it's named "🔔 Intercom DoorBell ignore notification Dismiss." This name suggests that the automation is related to dismissing or ignoring notifications for an intercom or doorbell event.
+
+Description: The description field is left empty, so there's no additional description provided for this automation.
+
+Trigger: This automation is triggered by an event. The trigger condition is defined as follows:
+
+platform: The trigger platform is "event," which means the automation will be triggered by an event.
+
+event_data: The automation will only trigger when the event data contains a specific action. In this case, the trigger event is looking for events with the action "intercom_ignore."
+
+event_type: The automation is tied to the "mobile_app_notification_action" event type. It implies that this automation is designed to respond to actions taken by the user within a mobile app notification.
+
+Condition: There are no additional conditions specified. This means the automation will proceed without any additional conditions beyond the trigger.
+
+Action: The action section specifies what should happen when the trigger condition is met. This automation has two actions:
+
+The first action uses the "notify.mobile_app_doogee_v20pro" service to send a notification with the message "clear_notification." It also includes data attributes with the "tag" set to "intercom." This effectively clears or dismisses the notification with the "intercom" tag on the "mobile_app_doogee_v20pro" mobile app.
+
+The second action is identical to the first but uses the "notify.mobile_app_Second_Phone" service to clear or dismiss the notification on another mobile device with the "intercom" tag.
+
+Mode: The mode is set to "single," which means that the automation will only run once for each trigger event. Subsequent trigger events with the "intercom_ignore" action will trigger this automation, but it will only clear the notification once.
+</details>
+
 ```
 alias: 🔔 Intercom DoorBell ignore notification Dismiss
 description: ""
