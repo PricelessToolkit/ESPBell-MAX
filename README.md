@@ -128,6 +128,11 @@ For board configuration, see the screenshot below
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
 </details>
 
+## Uploading the Arduino sketch
+To upload the sketch into ESPBell-MAX you will need two things.
+- Regular USB-TTL 3.3v adapter. I have [open-source USB-TTL](https://github.com/PricelessToolkit/UNIProg_Programmer) project too, in case you don’t have a TTL adapter yet and want to assemble it yourself.
+- Pogo pin Clamp Fixture "single row 6 Pin 2.54mm spacing" or you can solder wires directly to ESPBell-MAX for programming.
+
 ## ESPBell-MAX Code Configuration
 > [!NOTE]  
 > All configurations are done in the file "config.h"
