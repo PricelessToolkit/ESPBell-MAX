@@ -160,6 +160,32 @@ mode: single
 
 ### Automation _2_
 This automation clears notifications with the "tag: intercom" on phones when an ignore button on the notification is pressed.
+
+<details>
+  <summary>Explanation click me</summary>
+Alias: The alias is a user-defined name or label for the automation, and in this case, it's named "🔔 Intercom DoorBell ignore notification Dismiss." This name suggests that the automation is related to dismissing or ignoring notifications for an intercom or doorbell event.
+
+Description: The description field is left empty, so there's no additional description provided for this automation.
+
+Trigger: This automation is triggered by an event. The trigger condition is defined as follows:
+
+platform: The trigger platform is "event," which means the automation will be triggered by an event.
+
+event_data: The automation will only trigger when the event data contains a specific action. In this case, the trigger event is looking for events with the action "intercom_ignore."
+
+event_type: The automation is tied to the "mobile_app_notification_action" event type. It implies that this automation is designed to respond to actions taken by the user within a mobile app notification.
+
+Condition: There are no additional conditions specified. This means the automation will proceed without any additional conditions beyond the trigger.
+
+Action: The action section specifies what should happen when the trigger condition is met. This automation has two actions:
+
+The first action uses the "notify.mobile_app_doogee_v20pro" service to send a notification with the message "clear_notification." It also includes data attributes with the "tag" set to "intercom." This effectively clears or dismisses the notification with the "intercom" tag on the "mobile_app_doogee_v20pro" mobile app.
+
+The second action is identical to the first but uses the "notify.mobile_app_Second_Phone" service to clear or dismiss the notification on another mobile device with the "intercom" tag.
+
+Mode: The mode is set to "single," which means that the automation will only run once for each trigger event. Subsequent trigger events with the "intercom_ignore" action will trigger this automation, but it will only clear the notification once.
+</details>
+
 ```
 alias: 🔔 Intercom DoorBell ignore notification Dismiss
 description: ""
