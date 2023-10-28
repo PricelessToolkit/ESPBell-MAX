@@ -62,8 +62,15 @@ For board configuration, see the screenshot below
 </details>
 
 ## ESPBell-MAX Code Configuration
+> [!NOTE]  
+> All configurations are done in the file "config.h"
 
-### All configurations are done in the file "config.h"
+### WI-FI Settings
+To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead, we simply provide the access point's name, channel, and MAC address. This efficient method significantly shortens the connection time to the access point, taking just about 300 milliseconds.
+
+> [!IMPORTANT]
+> Make sure to set a fixed channel on your Wi-Fi access point.
+
 ```c
 #define WIFI_SSID "Your_WIFI_SSID"
 #define WIFI_AUTH "Your_WIFI_Password"
