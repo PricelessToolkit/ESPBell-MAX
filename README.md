@@ -80,7 +80,7 @@ MQTT Command Topic is "homeassistant/sensor/espbell-max/command" Payload is "00"
 
 ## Home Assistant Configuration
 Here is a multi-user configuration, which means that a message is sent to several family members. If one family member clicks on the notification, the notification disappears from the other phones. For all this to work we need to create three automation, but before that, in this example, you need to change a few things.
-- Image file path for an IMG that is used as a background for Notification.
+- Image file path that is used as a background for Notification.
 - The name of the mobile device that is connected to the Home Assistant. In my case, it's "doogee_v20pro" and "Second_Phone"
 ```
   image: /media/local/notify/doorbell.jpg
