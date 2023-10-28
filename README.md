@@ -93,7 +93,7 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 </details>
 
 > [!WARNING]
-> If there is current leakage between contacts 1 and 2 see "doorbell diagram" ESPBell-Max will not work properly "The current flow may be due to the installed light in the doorbell button"
+> If there is current leakage between contacts 1 and 2 see "doorbell diagram" ESPBell-Max will not work properly "The current flow may be due to the installed light in the doorbell button which can trigger ESPBell-MAX early"
 
 ## Arduino IDE Configuration
 ### Used Arduino Libraries
