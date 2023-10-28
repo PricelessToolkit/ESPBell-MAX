@@ -86,7 +86,14 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 > Currently, only the 4+N Intercom system is supported by ESPBell-MAX.
 
 ### _Doorbell_
-soon...
+
+<details>
+  <summary>Dorbell wiring diagram. Click here</summary>
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/doorbell_wiring.jpg"/>
+</details>
+
+> [!WARNING]
+> If there is current leakage between contacts 1 and 2 see "doorbell diagram" ESPBell-Max will not work properly "The current flow may be due to the installed light in the doorbell button"
 
 ## Arduino IDE Configuration
 ### Used Arduino Libraries
