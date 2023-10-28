@@ -92,6 +92,26 @@ Here is a multi-user configuration, which means that a message is sent to severa
 
 ### Automation _1_
 This automation sends an interactive notification with the "tag: intercom" to phones.
+
+<details open>
+  <summary>Explanation</summary>
+  Alias: This is a user-defined name or label for the automation. In this case, it's given the name "🔔 Intercom DoorBell Notification," which suggests that it's related to receiving notifications for an intercom or doorbell event.
+
+Description: This field is left empty, so there's no additional description provided for this automation.
+
+Trigger: The trigger specifies the event or condition that will start the automation. In this case, it is triggered when the state of the "binary_sensor.espbell_max_bell" changes to "on." This implies that the automation will run when the binary sensor named "espbell_max_bell" switches from an off state to an on state.
+
+Condition: There are no additional conditions specified. This means the automation will proceed without any additional conditions beyond the trigger.
+
+Action: The action section defines what should happen when the trigger condition is met. In this case, there are two actions defined:
+
+The first action uses the "notify.mobile_app_doogee_v20pro" service to send a notification to a mobile device. The notification includes a message "Someone at the door" and is configured with various data attributes, including a persistent notification, high importance, a specified channel ("intercom"), and a tag ("intercom"). It also includes an image file path for the notification and two actions that can be taken by the recipient: "Ignore ✖" and "Open The Door 🔓." The title and message of the notification are also specified in two languages (English and French).
+
+The second action is similar to the first but uses the "notify.mobile_app_Second_Phone" service to send the same notification to another mobile device.
+
+Mode: The mode is set to "single," which means that the automation will only run once for each trigger event. Subsequent trigger events will not cause the automation to run again until the current execution has been completed.
+</details>
+
 ```
 alias: 🔔 Intercom DoorBell Notification
 description: ""
