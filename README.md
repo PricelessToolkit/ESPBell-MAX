@@ -3,8 +3,10 @@
 🤗 If you value the effort I've put into crafting this open-source project and would like to show your support, consider subscribing to my [YouTube channel](https://www.youtube.com/@PricelessToolkit/videos). Your subscription goes a long way in backing my work.
 # ESPBell-MAX and [ESPBell-LITEl](https://github.com/PricelessToolkit/ESPBell-LITE)
 ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistant, enables you to stay informed whenever someone rings your doorbell or presses the intercom button. Upon receiving an interactive notification, you have the convenience to either promptly open the door or choose to dismiss the alert by simply tapping the button within the notification.
-
+<details>
+  <summary>Notification Screenshot</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/notification_m.jpg"/>
+</details>
 
 ### Links
 
@@ -37,6 +39,8 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 
 ## PCB Assembly
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
+
+## Arduino IDE Configuration
 
 ## ESPBell-MAX Code Configuration
 ### Used Arduino Libraries
