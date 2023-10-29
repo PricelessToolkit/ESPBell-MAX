@@ -14,6 +14,8 @@ ESPBell-MAX "IoT Intercom / Doorbell" module enables you to stay informed whenev
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/notification_m.jpg"/>
 </details>
 
+### _Supported software and future plans_
+Currently supported `Home Assistant` and `ESPhome` If I have time I'll add control by `Telegram`
 ____________
 
 ### Links
