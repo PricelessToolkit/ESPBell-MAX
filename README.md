@@ -36,8 +36,8 @@ ____________
   - When triggered: 21uAs - a few seconds
 - Input / Output
   - 2 x "R1/R2" SSR 2.4A 30v Max
-  - 1 x "DB" Input Optocoupler 2-30v Max "For Doorbell"
-  - 1 x "ET" Input 3.3-5v Max "External Trigger"
+  - 1 x "DB" Input Optocoupler 2-30v AC/DC Max "For Doorbell"
+  - 1 x "ET" Input 3.3-5v DC Max "External Trigger"
   - 1 x "B+" Battery Voltage "Permanent output"
   - 1 x "E+" Battery Voltage "When ESPBell is enabled"
   - 1 x GPIO14
