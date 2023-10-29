@@ -14,6 +14,8 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/notification_m.jpg"/>
 </details>
 
+____________
+
 ### Links
 
 - YouTube video [How To](https://www.youtube.com/@PricelessToolkit/videos)
@@ -22,6 +24,8 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
   - [UNIProg Programmer](https://www.pricelesstoolkit.com/en/projects/33-uniprog-uartupdi-programmer-33v.html)
 - Aliexpress
   - [Pogo pin Clamp Fixture](https://s.click.aliexpress.com/e/_DEHExUb)
+
+____________
 
 ## Specifications
 - Based on ESP12F "Programmable via pads on the PCB"
