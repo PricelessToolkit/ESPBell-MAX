@@ -53,7 +53,7 @@ ____________
 
 ## Before you start
 > [!NOTE]
-> I trust that everything is crystal clear as I've made every effort to provide a step-by-step explanation on the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to open a new discussion topic in the dedicated tab.
+> I hope that everything is crystal clear as I've made every effort to provide a step-by-step explanation on the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to open a new discussion topic in the dedicated tab.
 
 > [!IMPORTANT]
 > If you're new to Arduino-related matters, please refrain from asking basic questions like "how to install Arduino IDE". There are already plenty of excellent tutorials available on the internet. If you encounter any issues, remember that providing detailed information about the problem will help me offer more effective assistance. More information equals better help!
