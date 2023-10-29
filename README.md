@@ -72,7 +72,7 @@ ____________
 ## Schematic
 <details>
   <summary>View schematic. Click here</summary>
-<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/schematic.jpg"/>
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/PCB/schematic.jpg"/>
 </details>
 
 ____________
