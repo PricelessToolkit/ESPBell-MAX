@@ -16,6 +16,9 @@ ESPBell-MAX "IoT Intercom / Doorbell" module enables you to stay informed whenev
 
 ### _Supported software and future plans_
 Currently supported `Home Assistant` and `MQTT` If I have time I'll add control by `Telegram` and `WhatsApp`
+
+> [!NOTE]
+>  If you are ready to contribute to the project, I will be very happy. Due to lack of time, I can’t check the functionality quickly please don't change the original code, Create a new code/script in the Contributors_code Folder. Thank you very much!
 ____________
 
 ### Links
