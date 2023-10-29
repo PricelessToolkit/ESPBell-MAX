@@ -107,9 +107,11 @@ For board configuration in IDE, see the screenshot below
 
 ____________
 
-## ESPBell-MAX Code Configuration
-> [!NOTE]  
-> All configurations are done in the file "config.h"
+## ESPBell-MAX MQTT sketch configuration
+
+> [!NOTE]
+> For `ESPBell-MAX_MQTT_Auto_Discovery.ino`
+> all configurations are done in the file `config.h`
 
 ### _WI-FI Settings_
 To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead, we simply provide the access point's name, channel, and MAC address. This efficient method significantly shortens the connection time to the access point, taking just about 300 milliseconds.
