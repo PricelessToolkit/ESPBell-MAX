@@ -45,6 +45,8 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 - Battery type Li-Ion 18650
 - Button for flashing Firmware
 
+____________
+
 ## Before you start
 > [!NOTE]
 > I trust that everything is crystal clear as I've made every effort to provide a step-by-step explanation on the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to open a new discussion topic in the dedicated tab.
@@ -56,15 +58,20 @@ ESPBell-MAX "IoT Intercom / Doorbell" module specifically made for Home Assistan
 > I would strongly advise against attempting to assemble this PCB on your own if you have no experience "0%" in soldering, or working with ESP / Arduino boards.
 > Connecting ESPBell-MAX to your intercom or doorbell demands a certain level of electronics expertise and the proficiency to utilize a multimeter effectively. Please be aware that I cannot assume responsibility for any errors or issues that may arise. My role is to provide guidance and advice to the best of my abilities.
 
+____________
 
 ## PCB Assembly
 This project is open-source, allowing you to assemble ESPBell-MAX on your own. To simplify this process, I've provided an "Interactive HTML Boom File" located in the PCB folder. This interactive file helps you identify where to solder each component and polarity, reducing the chances of errors to a minimum. But if you don't feel confident in assembling it yourself, you can always opt to purchase a pre-assembled board from my [Shop](https://www.pricelesstoolkit.com)
+
+____________
 
 ## Schematic
 <details>
   <summary>View schematic. Click here</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/schematic.jpg"/>
 </details>
+
+____________
 
 ## Arduino IDE Configuration
 ### Used Arduino Libraries
@@ -86,6 +93,8 @@ For board configuration in IDE, see the screenshot below
   <summary>Board config Screenshot</summary>
 <img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/arduino.jpg"/>
 </details>
+
+____________
 
 ## ESPBell-MAX Code Configuration
 > [!NOTE]  
@@ -150,6 +159,8 @@ const long openTime = 2000;  // How long relays is on.
 const int autoOff = 1; // 0 = DISABLE / 1 = ENABLE // Powering off automatically after "openTime" // if is set to 0 ESPBell will power down after upTime.
 ```
 
+____________
+
 ## Uploading the Arduino sketch
 To upload the sketch into ESPBell-MAX you will need two things.
 - Regular USB-TTL 3.3v adapter. I have [open-source USB-TTL](https://github.com/PricelessToolkit/UNIProg_Programmer) project, in case you don’t have a TTL adapter yet and want to assemble it yourself.
@@ -164,6 +175,8 @@ To upload the sketch into ESPBell-MAX you will need two things.
 | GND     | GND         |
 | 3.3v    | 3.3V        |
 
+
+____________
 
 ## Wiring diagram ESPBell-Max to Intercom | Doorbell
 
@@ -207,6 +220,8 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 
 > [!WARNING]
 > If there is current leakage between contacts 1 and 2 see "Dorbell wiring diagram" ESPBell-Max will not work properly "The current flow may be due to the installed light bulb in the doorbell button which can trigger ESPBell-MAX early" So before you start it’s better to check it with a multimeter.
+
+____________
 
 ## Home Assistant Configuration
 > [!NOTE]
