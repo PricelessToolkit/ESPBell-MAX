@@ -40,7 +40,7 @@ ____________
   - 1 x "ET" Input 3.3-5v DC Max "External Trigger"
   - 1 x "B+" Battery Voltage "Permanent output"
   - 1 x "E+" Battery Voltage "When ESPBell is enabled"
-  - 1 x GPIO14
+  - 1 x "GPIO14" 3.3v DC MAX
   - 2 x GND "Only! for ET/B+/E+/GPIO14"
 - Status LEDs - Can be deactivated "PCB Jumper"
   - 1 x R1
