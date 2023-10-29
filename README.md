@@ -20,7 +20,7 @@ Currently supported `Home Assistant` and `MQTT` If I have time I'll add control 
 ### _Contributors_
 
 > [!NOTE]
->  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new features functionality. Therefore, please refrain from making changes to the original code. Instead, create a new code/script in the 'Contributors_code' folder. Thank you very much!
+>  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new features functionality. Therefore, please refrain from making changes to the original code. Instead, create a new code/script in the 'Contributors_code' folder and use this [README_Contributors.md](https://github.com/PricelessToolkit/ESPBell-MAX/blob/main/Code/Contributors_code/README_Contributors.md) Thank you very much!
 ____________
 
 ### Links
