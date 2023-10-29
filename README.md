@@ -16,6 +16,9 @@ ESPBell-MAX "IoT Intercom / Doorbell" module enables you to stay informed whenev
 
 ### _Supported software and future plans_
 Currently supported `Home Assistant` and `MQTT` If I have time I'll add control by `Telegram` and `WhatsApp`
+
+> [!NOTE]
+>  If you are ready to contribute to the project, I will be very happy. Due to lack of time, I can’t check the functionality quickly please don't change the original code, Create a new code/script in the Contributors Code Folder. Thank you very much!
 ____________
 
 ### Links
@@ -36,11 +39,11 @@ ____________
   - When triggered: 21uAs - a few seconds
 - Input / Output
   - 2 x "R1/R2" SSR 2.4A 30v Max
-  - 1 x "DB" Input Optocoupler 2-30v Max "For Doorbell"
-  - 1 x "ET" Input 3.3-5v Max "External Trigger"
+  - 1 x "DB" Input Optocoupler 2-30v AC/DC Max "For Doorbell"
+  - 1 x "ET" Input 3.3-5v DC Max "External Trigger"
   - 1 x "B+" Battery Voltage "Permanent output"
   - 1 x "E+" Battery Voltage "When ESPBell is enabled"
-  - 1 x GPIO14
+  - 1 x "GPIO14" 3.3v DC MAX
   - 2 x GND "Only! for ET/B+/E+/GPIO14"
 - Status LEDs - Can be deactivated "PCB Jumper"
   - 1 x R1
