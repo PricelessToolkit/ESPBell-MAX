@@ -412,4 +412,4 @@ Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
 </details>
 
 > [!WARNING]
-> If there is current leakage between contacts 1 and 2 see "Dorbell wiring diagram" ESPBell-Max may trigger randomly "The current flow may be due to the installed light bulb in the doorbell button which illuminates all the time" So before you start it’s better to check it with a multimeter.
+> If there is current leakage between contacts 1 and 2 see "Dorbell wiring diagram" ESPBell may trigger randomly "The current flow may be due to the installed light bulb in the doorbell button which illuminates all the time" So before you start it’s better to check it with a multimeter.
