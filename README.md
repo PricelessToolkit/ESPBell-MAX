@@ -140,8 +140,6 @@ As the DHCP-based IP address assignment may introduce certain delays, we can opt
 ### _MQTT Settings_
 Fill in Mosquitto broker credentials and IP address.
 
-> [!IMPORTANT]
-> SSL on Mosquitto broker is disabled.
 
 ```c
 const char* mqtt_username = "Your_MQTT_Username";
