@@ -37,8 +37,8 @@ ____________
 ## Specifications
 - Based on ESP12F "Programmable via pads on the PCB"
 - Power consumption
-  - Standby mode: 0uAh
-  - When triggered: 21uAs - a few seconds
+  - Standby mode: 0.08mA "Per Mont!"
+  - When triggered: 21uA/s - a few seconds
 - Input / Output
   - 2 x "R1/R2" SSR 2.4A 30v Max
   - 1 x "DB" Input Optocoupler 2-30v AC/DC Max "For Doorbell"
