@@ -68,7 +68,7 @@ ____________
 ## Before you start
 
 > [!NOTE]
-> ✅ Please [check your Intercom type.](https://www.intercomsrus.com/finder/) It needs to be 4+N wire type.
+> ✅ Please [check your Intercom type.](https://www.intercomsrus.com/finder/) It needs to be a 4+N wire intercom system.
 > I hope that everything is crystal clear as I've made every effort to provide a step-by-step explanation of the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to join our [Facebook Group](https://www.facebook.com/groups/pricelesstoolkit) or open a new [discussion](https://github.com/PricelessToolkit/ESPBell-MAX/discussions) topic in the dedicated tab.
 
 > [!IMPORTANT]
