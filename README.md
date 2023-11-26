@@ -25,12 +25,19 @@ ____________
 
 ### Links
 
-- YouTube video [How To](https://www.youtube.com/@PricelessToolkit/videos)
+- YouTube video [How To](https://youtu.be/-lQ_mbuilic)
 - My Shop
   - [ESPBell-MAX](https://www.pricelesstoolkit.com)
   - [UNIProg Programmer](https://www.pricelesstoolkit.com/en/projects/33-uniprog-uartupdi-programmer-33v.html)
 - Aliexpress
-  - [Pogo pin Clamp Fixture](https://s.click.aliexpress.com/e/_DEHExUb)
+  - Pogo pin Clamp Fixture
+    - https://s.click.aliexpress.com/e/_Dm3ox9R
+  - Battery
+    - https://s.click.aliexpress.com/e/_DCEo23d
+    - https://s.click.aliexpress.com/e/_DCRn6r5
+  - Charger
+    - https://s.click.aliexpress.com/e/_DeroSfz
+    - https://s.click.aliexpress.com/e/_DmU1DXv
 
 ____________
 
