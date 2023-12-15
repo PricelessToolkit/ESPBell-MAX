@@ -25,20 +25,30 @@ ____________
 
 ### Links
 
-- YouTube video [How To](https://www.youtube.com/@PricelessToolkit/videos)
+- YouTube video [How To](https://youtu.be/-lQ_mbuilic)
 - My Shop
-  - [ESPBell-MAX](https://www.pricelesstoolkit.com)
+  - [ESPBell-MAX](https://www.pricelesstoolkit.com/en/projects/37-espbell-max-intercom-doorbell-module-0741049314467.html)
   - [UNIProg Programmer](https://www.pricelesstoolkit.com/en/projects/33-uniprog-uartupdi-programmer-33v.html)
 - Aliexpress
-  - [Pogo pin Clamp Fixture](https://s.click.aliexpress.com/e/_DEHExUb)
+  - Pogo pin Clamp Fixture
+    - https://s.click.aliexpress.com/e/_Dm3ox9R
+  - Battery
+    - https://s.click.aliexpress.com/e/_DCEo23d
+    - https://s.click.aliexpress.com/e/_DCRn6r5
+  - Charger
+    - https://s.click.aliexpress.com/e/_DeroSfz
+    - https://s.click.aliexpress.com/e/_DmU1DXv
+  - Vis and Insert "Optional for 3D Case"
+    - 3 x Vis M2 4mm - https://s.click.aliexpress.com/e/_DFzWgSp
+    - 3 x Insert M2(OD 3.2mm) - https://s.click.aliexpress.com/e/_DkM0Kfb
 
 ____________
 
 ## Specifications
 - Based on ESP12F "Programmable via pads on the PCB"
 - Power consumption
-  - Standby mode: 0uAh
-  - When triggered: 21uAs - a few seconds
+  - Standby mode: 0.08mA "Per Mont!"
+  - When triggered: 21uA/s - a few seconds
 - Input / Output
   - 2 x "R1/R2" SSR 2.4A 30v Max
   - 1 x "DB" Input Optocoupler 2-30v AC/DC Max "For Doorbell"
@@ -59,8 +69,10 @@ ____________
 ____________
 
 ## Before you start
+
 > [!NOTE]
-> I hope that everything is crystal clear as I've made every effort to provide a step-by-step explanation of the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to open a new discussion topic in the dedicated tab.
+> ✅ Please [check your Intercom type.](https://www.intercomsrus.com/finder/) It needs to be a 5-wire intercom system.
+> I hope that everything is crystal clear as I've made every effort to provide a step-by-step explanation of the setup process. If you have any further questions regarding the setup or require assistance with assembling a printed circuit board, feel free to join our [Facebook Group](https://www.facebook.com/groups/pricelesstoolkit) or open a new [discussion](https://github.com/PricelessToolkit/ESPBell-MAX/discussions) topic in the dedicated tab.
 
 > [!IMPORTANT]
 > If you're new to Arduino-related matters, please refrain from asking basic questions like "how to install Arduino IDE". There are already plenty of excellent tutorials available on the internet. If you encounter any issues, remember that providing detailed information about the problem will help me offer more effective assistance. More information equals better help!
@@ -107,9 +119,11 @@ For board configuration in IDE, see the screenshot below
 
 ____________
 
-## ESPBell-MAX Code Configuration
-> [!NOTE]  
-> All configurations are done in the file "config.h"
+## ESPBell-MAX MQTT sketch configuration
+
+> [!NOTE]
+> For `ESPBell-MAX_MQTT_Auto_Discovery.ino`
+> all configurations are done in the file `config.h`
 
 ### _WI-FI Settings_
 To ensure a rapid Wi-Fi connection, we skip the Wi-Fi scanning process. Instead, we simply provide the access point's name, channel, and MAC address. This efficient method significantly shortens the connection time to the access point, taking just about 300 milliseconds.
@@ -138,8 +152,6 @@ As the DHCP-based IP address assignment may introduce certain delays, we can opt
 ### _MQTT Settings_
 Fill in Mosquitto broker credentials and IP address.
 
-> [!IMPORTANT]
-> SSL on Mosquitto broker is disabled.
 
 ```c
 const char* mqtt_username = "Your_MQTT_Username";
@@ -186,51 +198,6 @@ To upload the sketch into ESPBell-MAX you will need two things.
 | GND     | GND         |
 | 3.3v    | 3.3V        |
 
-
-____________
-
-## Wiring diagram ESPBell-Max to Intercom | Doorbell
-
-### _Intercom_
-<details>
-  <summary>Differences Between 4+N and 1+N Intercom Systems. Click here</summary>
-
-In the world of intercom systems, two common configurations stand out: 4+N and 1+N. Understanding the distinctions between these setups is crucial for successful installation and operation. Here's a quick overview:
-
-4+N Intercom Systems:
-
-In a 4+N system, the "4" signifies the presence of four distinct wires, each with a specific purpose.
-These four wires are typically allocated as follows: one for the microphone, one for the speaker, one for the doorbell, and one for the lock.
-Additionally, the "N" wire represents the neutral wire, which is used for the electrical current's return path.
-4+N systems offer separate wiring and control for microphone, speaker, doorbell, and lock functions.
-
-1+N Intercom Systems:
-
-In contrast, a 1+N system streamlines the wiring process by combining audio communication and power supply over a single wire.
-The "1" in 1+N indicates that one wire is used for both audio communication and power transmission.
-Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
-1+N systems simplify wiring, using a single wire for audio and power, making installation more straightforward.
-
-
-</details>
-
-<details>
-  <summary>4+N Intercom System wiring diagram. Click here</summary>
-<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/diagrame.png"/>
-</details>
-
-> [!NOTE]
-> Currently, only the 4+N Intercom system is supported by ESPBell-MAX. But if you want you can connect ESPBell-MAX to the unsupported intercom buttons directly!
-
-### _Doorbell_
-
-<details>
-  <summary>Dorbell wiring diagram. Click here</summary>
-<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/doorbell_wiring.jpg"/>
-</details>
-
-> [!WARNING]
-> If there is current leakage between contacts 1 and 2 see "Dorbell wiring diagram" ESPBell-Max will not work properly "The current flow may be due to the installed light bulb in the doorbell button which can trigger ESPBell-MAX early" So before you start it’s better to check it with a multimeter.
 
 ____________
 
@@ -412,3 +379,47 @@ mode: single
 
 ```
 
+____________
+
+## Wiring diagram ESPBell-Max to Intercom | Doorbell
+
+### _Intercom_
+<details>
+  <summary>Differences Between 4+N and 1+N Intercom Systems. Click here</summary>
+
+In the world of intercom systems, two common configurations stand out: 4+N and 1+N. Understanding the distinctions between these setups is crucial for successful installation and operation. Here's a quick overview:
+
+4+N Intercom Systems:
+
+In a 4+N system, the "4" signifies the presence of four distinct wires, each with a specific purpose.
+These four wires are typically allocated as follows: one for the microphone, one for the speaker, one for the doorbell, and one for the lock.
+Additionally, the "N" wire represents the neutral wire, which is used for the electrical current's return path.
+4+N systems offer separate wiring and control for microphone, speaker, doorbell, and lock functions.
+
+1+N Intercom Systems:
+
+In contrast, a 1+N system streamlines the wiring process by combining audio communication and power supply over a single wire.
+The "1" in 1+N indicates that one wire is used for both audio communication and power transmission.
+Like 4+N systems, the "N" wire in 1+N systems also stands for the neutral wire.
+1+N systems simplify wiring, using a single wire for audio and power, making installation more straightforward.
+
+
+</details>
+
+<details>
+  <summary>4+N Intercom System wiring diagram. Click here</summary>
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/diagrame.png"/>
+</details>
+
+> [!NOTE]
+> Currently, only the 4+N Intercom system is supported by ESPBell-MAX. But if you want you can connect ESPBell-MAX to the unsupported intercom buttons directly!
+
+### _Doorbell_
+
+<details>
+  <summary>Dorbell wiring diagram. Click here</summary>
+<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/doorbell_wiring.jpg"/>
+</details>
+
+> [!WARNING]
+> If there is current leakage between contacts 1 and 2 see "Dorbell wiring diagram" ESPBell may trigger randomly "The current flow may be due to the installed light bulb in the doorbell button which illuminates all the time" So before you start it’s better to check it with a multimeter.
