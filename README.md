@@ -38,6 +38,9 @@ ____________
   - Charger
     - https://s.click.aliexpress.com/e/_DeroSfz
     - https://s.click.aliexpress.com/e/_DmU1DXv
+  - Vis and Insert
+    - 3 x Vis M2 4mm - https://s.click.aliexpress.com/e/_DFzWgSp
+    - 3 x Insert M2(OD 3.2mm) - https://s.click.aliexpress.com/e/_DkM0Kfb
 
 ____________
 
