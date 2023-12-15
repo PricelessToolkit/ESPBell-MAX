@@ -11,7 +11,7 @@
 #define DATA_GATEWY IPAddress(192,168,99,1)
 #define DATA_DNS1   IPAddress(192,168,99,1)
 
-
+// MQTT Credentials
 const char* mqtt_username = "Your_MQTT_Username";
 const char* mqtt_password = "Your_MQTT_Password";
 const char* mqtt_server = "MQTT/HomeAssistant_IP";

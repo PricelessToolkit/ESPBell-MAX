@@ -50,7 +50,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   }
   Serial.println();
 
-  // Switch on the LED if an 1 was received as first character
+  // Switch on the R1 if an 1 was received as first character
   if ((char)payload[0] == '1') {
       digitalWrite(R1_PIN, HIGH); // Turn on the R1
       R1_startMillis = millis();
@@ -62,7 +62,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 
 
-
+  // Switch on the R2 if an 1 was received as second character
   if ((char)payload[1] == '1') {
       digitalWrite(R2_PIN, HIGH);   // Turn on the R2
       R2_startMillis = millis();
@@ -89,7 +89,6 @@ void reconnect() {
      }
     // Create a random client ID
     String clientId = "ESPBell-Max-";
-    //clientId += String(random(0xffff), HEX);
     // Attempt to connect
     if (client.connect(clientId.c_str(),mqtt_username, mqtt_password)) {
         Serial.println("connected");
