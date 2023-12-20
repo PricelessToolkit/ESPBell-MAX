@@ -198,7 +198,7 @@ To upload the sketch into ESPBell-MAX you will need two things.
 | GND     | GND         |
 | 3.3v    | 3.3V        |
 
-
+You need to put the ESPBell-MAX into download mode to upload the firmware, for that, press and hold the Flash button on the ESPBell-MAX, then plug in the USB and press the upload button in Arduino IDE, Don't release the Flash button until you see the upload progress.
 ____________
 
 ## Home Assistant Configuration
