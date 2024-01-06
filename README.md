@@ -42,8 +42,8 @@ ____________
     - 3 x Vis M2 4mm - https://s.click.aliexpress.com/e/_DFzWgSp
     - 3 x Insert M2(OD 3.2mm) - https://s.click.aliexpress.com/e/_DkM0Kfb
   - Cable and connector
-    - 1 x 12 Pin cable https://s.click.aliexpress.com/e/_DdG8cCl
-    - 1 x 12 Pin connector "Straight" https://s.click.aliexpress.com/e/_DDWbwM5
+    - 1 x 12 Pin PH2.0mm cable https://s.click.aliexpress.com/e/_DdG8cCl
+    - 1 x 12 Pin PH2.0mm connector "Straight" https://s.click.aliexpress.com/e/_DDWbwM5
 
 ____________
 
