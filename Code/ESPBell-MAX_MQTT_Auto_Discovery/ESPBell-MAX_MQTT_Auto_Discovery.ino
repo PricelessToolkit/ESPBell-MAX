@@ -198,7 +198,7 @@ void loop() {
   if(R2_oneshot >= 1){
     R2_currentMillis = millis();
     if (R2_currentMillis - R2_startMillis >= openTime){
-      digitalWrite(R2_PIN, LOW);
+      digitalWrite(R2_PIN, LOW); // Turn off the R2
       R2_oneshot = 0;
       if (autoOff == 1){
         client.publish("homeassistant/binary_sensor/espbell-max/state", "off", retain);
@@ -214,10 +214,11 @@ void loop() {
   if (currentMillis + startMillis >= upTime) {
     // Reset doorbell status and command before poweroff
     client.publish("homeassistant/binary_sensor/espbell-max/state", "off", retain);
-    delay(10);
+    delay(15);
     client.publish("homeassistant/sensor/espbell-max/command", "00", retain);
-    delay(10);
+    delay(15);
     client.endPublish();
+	delay(15);
     digitalWrite(LATCH_PIN, LOW);
     }
 }
