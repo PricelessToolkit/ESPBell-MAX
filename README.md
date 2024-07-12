@@ -159,7 +159,7 @@ Fill in Mosquitto broker credentials and IP address.
 ```c
 const char* mqtt_username = "Your_MQTT_Username";
 const char* mqtt_password = "Your_MQTT_Password";
-const char* mqtt_server = "IP address of MQTT/HomeAssistant";
+const char* mqtt_server = "IP_Address_of_MQTT/HomeAssistant";
 const int mqtt_port = 1883;
 ```
 ### _Timing Settings_
