@@ -17,11 +17,6 @@ ESPBell-MAX "IoT Intercom / Doorbell" module enables you to stay informed whenev
 ### _Supported software and future plans_
 Currently supported `Home Assistant` and `MQTT` If I have time I'll add control by `Telegram` and `WhatsApp`
 
-### _Contributors_
-
-> [!NOTE]
->  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new "features" or completely new "code" functionality. Therefore, please refrain from making changes to the original code. Instead, create a new code/script in the 'Contributors_code' folder and use this [README_Contributors.md](https://github.com/PricelessToolkit/ESPBell-MAX/blob/main/Code/Contributors_code/README_Contributors.md) Thank you very much!
-____________
 
 ### Links
 
@@ -70,6 +65,25 @@ ____________
 - Button for flashing Firmware
 
 ____________
+
+## 📣 Updates, Bugfixes, and Breaking Changes
+
+> [!NOTE]
+>  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new "features" or completely new "code" functionality, so please create a new code/script in the new folder.
+
+- **25.07.2024** - Hardware and software modification "Voltage divider R8-30K R9-10K"
+  ```c
+  // Battery Voltage Calculation, based on order date uncomment corresponding ligne
+
+  // Orders before 15.07.2024 "Voltage divider R8-100K R9-10K"
+  int batteryPercentage = map(adcValue, 298, 391, 0, 100);
+
+  // Orders after 15.07.2024 "Voltage divider R8-30K R9-10K"
+  int batteryPercentage = map(adcValue, 818, 1023, 0, 100);
+  ```
+
+____________
+
 
 ## Before you start
 
@@ -159,7 +173,7 @@ Fill in Mosquitto broker credentials and IP address.
 ```c
 const char* mqtt_username = "Your_MQTT_Username";
 const char* mqtt_password = "Your_MQTT_Password";
-const char* mqtt_server = "MQTT/HomeAssistant_IP";
+const char* mqtt_server = "IP_Address_of_MQTT/HomeAssistant";
 const int mqtt_port = 1883;
 ```
 ### _Timing Settings_
