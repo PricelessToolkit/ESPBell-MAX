@@ -71,11 +71,16 @@ ____________
 > [!NOTE]
 >  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new "features" or completely new "code" functionality, so please create a new code/script in the new folder.
 
-- **25.07.2024** - "Voltage divider R8-100K R9-10K"
+- **25.07.2024** - "Voltage divider resistor R8 is 100K or 30K"
   ```c
   // Battery Voltage Calculation
-  int batteryPercentage = map(adcValue, 300, 410, 0, 100); // "Voltage divider R8-100K R9-10K"
+  // Orders before 15.07.2024 Please check the voltage divider value. "Marking on the resistor R8"
   
+  // If "01D" R8 = 100K"
+  int batteryPercentage = map(adcValue, 300, 410, 0, 100); // "Voltage divider R8-100K"
+  
+  // If "303" R8 = 30K"
+  int batteryPercentage = map(adcValue, 829, 1023, 0, 100); // "Voltage divider R8-30K"
   ```
 
 ____________
