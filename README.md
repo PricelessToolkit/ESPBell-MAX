@@ -71,15 +71,12 @@ ____________
 > [!NOTE]
 >  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new "features" or completely new "code" functionality, so please create a new code/script in the new folder.
 
-- **25.07.2024** - Hardware and software modification "Voltage divider R8-30K R9-10K"
+- **25.07.2024** - "Voltage divider R8-100K R9-10K"
   ```c
-  // Battery Voltage Calculation, based on order date uncomment corresponding ligne
-
+  // Battery Voltage Calculation
   // Orders before 15.07.2024 "Voltage divider R8-100K R9-10K"
   int batteryPercentage = map(adcValue, 300, 410, 0, 100);
-
-  // Orders after 15.07.2024 "Voltage divider R8-30K R9-10K"
-  int batteryPercentage = map(adcValue, 818, 1023, 0, 100);
+  
   ```
 
 ____________
