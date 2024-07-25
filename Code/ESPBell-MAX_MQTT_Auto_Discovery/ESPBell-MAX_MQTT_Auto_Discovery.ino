@@ -8,7 +8,7 @@
 bool retain = true;
 
 const int adcPin = A0;
-int batteryPercentage;
+int batteryP;
 unsigned long startMillis = 0;
 
 unsigned long R1_startMillis;
@@ -86,13 +86,14 @@ int getAverageADCReading() {
   return average;
 }
 
+
 // Battery Voltage Calculation, uncamment ligne based of order date
 int getBatteryPercentageCase() {
   int adcValue = getAverageADCReading();
-  //int batteryPercentage = map(adcValue, 298, 391, 0, 100); // Orders before 15.07.2024 "Voltage divider R8-100K R9-10K"
-  int batteryPercentage = map(adcValue, 818, 1023, 0, 100);  // Orders after 15.07.2024 Hardware modification "Voltage divider R8-30K R9-10K"
-  batteryPercentage = constrain(batteryPercentage, 0, 100);
-  return batteryPercentage;
+  int batteryPercentage = map(adcValue, 300, 410, 0, 100); // Orders before 15.07.2024 "Voltage divider R8-100K R9-10K"
+  //int batteryPercentage = map(adcValue, 818, 1023, 0, 100);  // Orders after 15.07.2024 Hardware modification "Voltage divider R8-30K R9-10K"
+  batteryP = constrain(batteryPercentage, 0, 100);
+  return batteryP;
 }
 
 
@@ -146,7 +147,7 @@ void reconnect() {
 
 
         getBatteryPercentageCase();
-        client.publish("homeassistant/sensor/espbell-max/batt", String(batteryPercentage).c_str(), retain);
+        client.publish("homeassistant/sensor/espbell-max/batt", String(batteryP).c_str(), retain);
 
 
         // Subscribing to Open command "R1/R2"
