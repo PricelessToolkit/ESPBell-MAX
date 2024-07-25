@@ -76,7 +76,7 @@ ____________
   // Battery Voltage Calculation, based on order date uncomment corresponding ligne
 
   // Orders before 15.07.2024 "Voltage divider R8-100K R9-10K"
-  int batteryPercentage = map(adcValue, 298, 391, 0, 100);
+  int batteryPercentage = map(adcValue, 300, 410, 0, 100);
 
   // Orders after 15.07.2024 "Voltage divider R8-30K R9-10K"
   int batteryPercentage = map(adcValue, 818, 1023, 0, 100);
