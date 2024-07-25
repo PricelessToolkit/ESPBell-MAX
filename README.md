@@ -74,8 +74,7 @@ ____________
 - **25.07.2024** - "Voltage divider R8-100K R9-10K"
   ```c
   // Battery Voltage Calculation
-  // Orders before 15.07.2024 "Voltage divider R8-100K R9-10K"
-  int batteryPercentage = map(adcValue, 300, 410, 0, 100);
+  int batteryPercentage = map(adcValue, 300, 410, 0, 100); // "Voltage divider R8-100K R9-10K"
   
   ```
 
