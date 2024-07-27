@@ -79,8 +79,8 @@ ____________
   // If "01D" R8 = 100K"
   int batteryPercentage = map(adcValue, 300, 410, 0, 100); // "Voltage divider R8-100K"
   
-  // If "303" R8 = 30K"
-  int batteryPercentage = map(adcValue, 829, 1023, 0, 100); // "Voltage divider R8-30K"
+  // If "61C" R8 = 42.2K"
+  int batteryPercentage = map(average, 670, 880, 0, 100);; // "Voltage divider R8-42.2K"
   ```
 
 ____________
