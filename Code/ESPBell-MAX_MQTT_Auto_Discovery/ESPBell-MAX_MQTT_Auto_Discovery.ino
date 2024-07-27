@@ -7,8 +7,6 @@
 #define R2_PIN 12
 bool retain = true;
 
-const int adcPin = A0;
-int batteryP;
 unsigned long startMillis = 0;
 
 unsigned long R1_startMillis;
@@ -76,25 +74,16 @@ void callback(char* topic, byte* payload, unsigned int length) {
 }
 
 
-// Function to read the average of four ADC values
+// Function to read the average of 20 ADC values
 int getAverageADCReading() {
   int total = 0;
-  for (int i = 0; i < 4; i++) {
-    total += analogRead(adcPin);
+  for (int i = 0; i < 20; i++) {
+    total += analogRead(A0);
   }
-  int average = total / 4;
+  int average = total / 20;
   return average;
 }
 
-
-// Battery Voltage Calculation, uncamment ligne based of order date
-int getBatteryPercentageCase() {
-  int adcValue = getAverageADCReading();
-  int batteryPercentage = map(adcValue, 300, 410, 0, 100); // Orders before 15.07.2024 "Voltage divider R8-100K R9-10K"
-  //int batteryPercentage = map(adcValue, 818, 1023, 0, 100);  // Orders after 15.07.2024 Hardware modification "Voltage divider R8-30K R9-10K"
-  batteryP = constrain(batteryPercentage, 0, 100);
-  return batteryP;
-}
 
 
 
@@ -146,7 +135,10 @@ void reconnect() {
 
 
 
-        getBatteryPercentageCase();
+        int average = getAverageADCReading();
+        //int batteryPercentage = map(average, 300, 410, 0, 100); // Orders before 15.07.2024 "Voltage divider R8-100K"
+        int batteryPercentage = map(average, 670, 880, 0, 100);  // Orders after 15.07.2024 Hardware modification "Voltage divider R8-42.2K"
+        int batteryP = constrain(batteryPercentage, 0, 100);
         client.publish("homeassistant/sensor/espbell-max/batt", String(batteryP).c_str(), retain);
 
 
