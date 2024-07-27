@@ -33,3 +33,6 @@ const int autoOff = 1; // 0 = DISABLE / 1 = ENABLE : Powerig off automaticaly af
 // "11" R1=ON R2=ON
 // "10" R1=ON R2=OFF
 // "00" R1=OFF R2=OFF
+
+// ADC Battery Voltage reading problem?
+// Battery voltage calibration on 139 and 140 lines.
