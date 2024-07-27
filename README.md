@@ -71,7 +71,7 @@ ____________
 > [!NOTE]
 >  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new "features" or completely new "code" functionality, so please create a new code/script in the new folder.
 
-- **25.07.2024** - "Voltage divider resistor R8 is 100K or 30K"
+- **25.07.2024** - "Voltage divider resistor R8 is 100K or 42.2K"
   ```c
   // Battery Voltage Calculation
   // Orders before 15.07.2024 Please check the voltage divider value. "Marking on the resistor R8"
