@@ -45,7 +45,7 @@ ____________
 ## Specifications
 - Based on ESP12F "Programmable via pads on the PCB"
 - Power consumption
-  - Standby mode: 0.08mA "Per Mont!"
+  - Standby mode: 0.08mA "Per Month!"
   - When triggered: 21uA/s
 - Input / Output
   - 2 x "R1/R2" SSR 2.4A 30v Max
@@ -59,8 +59,8 @@ ____________
   - 1 x R1
   - 1 x R2
   - 1 x DoorBell
-  - 1x Power
-  - 1x On ESP module "Not used"
+  - 1 x Power
+  - 1 x On ESP module "Not used"
 - Battery type Li-Ion 18650
 - Button for flashing Firmware
 
