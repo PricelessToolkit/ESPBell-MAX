@@ -399,6 +399,21 @@ mode: single
 
 ____________
 
+
+## Power Behavior
+
+By default, the device is designed to remain in a power-off state when not triggered. It is **not** meant to stay powered on continuously. Instead, it will automatically wake up, send the necessary data to Home Assistant, wait for the configured **"stay awake" duration** (as set in the firmware), and then return to power-off mode.
+
+The ESPBell MAX wakes up (powers on) **only when**:
+
+1. The **ET (External Trigger)** pin is momentarily connected to **B+**, or  
+2. A doorbell signal is received via the **DB (Doorbell)** input pins.
+
+This behavior ensures **long battery life** and is intentional by design.
+
+
+
+
 ## Wiring diagram ESPBell-Max to Intercom | Doorbell
 
 ### _Intercom_
