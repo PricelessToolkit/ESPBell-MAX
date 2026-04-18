@@ -1,10 +1,20 @@
-<img src="https://raw.githubusercontent.com/PricelessToolkit/ESPBell-MAX/main/img/banner.jpg"/>
+<div align="center">
+  <img alt="CapiBridge"
+       src="img/banner.jpg?raw=true"
+       >
 
-🤗 Please consider subscribing to my [YouTube channel](https://www.youtube.com/@PricelessToolkit/videos)
-Your subscription goes a long way in backing my work.
+🤗 Please consider subscribing to my YouTube channel. Your subscription goes a long way toward supporting my work. If you would like to contribute even more, you can also buy me a coffee.
+  
+  [Shop](https://www.pricelesstoolkit.com) | [YouTube](https://www.youtube.com/watch?v=-lQ_mbuilic)
+  
+</div>
+<p align="center">
+  <a href="https://ko-fi.com/U6U2QLAF8">
+    <img src="https://ko-fi.com/img/githubbutton_sm.svg"/>
+  </a>
+</p>
 
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U2QLAF8)
+____________
 
 
 # ESPBell-MAX and [ESPBell-LITE](https://github.com/PricelessToolkit/ESPBell-LITE)
@@ -67,9 +77,6 @@ ____________
 ____________
 
 ## 📣 Updates, Bugfixes, and Breaking Changes
-
-> [!NOTE]
->  If you're ready to contribute to the project, your support would be greatly appreciated. Due to time constraints, I may not be able to quickly verify new "features" or completely new "code" functionality, so please create a new code/script in the new folder.
 
 - **25.07.2024** - "Voltage divider resistor R8 is 100K or 42.2K"
   ```c
